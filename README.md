@@ -128,5 +128,51 @@ This task includes two variations of combining `File1.txt` and `File2.txt` into 
 - SSIS Import and Export Wizard
 - SQL Server Management Studio (SSMS)
 
+## ▶️ How to Use the SSIS Packages
+
+Follow the steps below to run and test the SSIS packages included in this project.
+
+### 1. 📦 Requirements
+Ensure the following are installed on your system:
+- **SQL Server** (with [ITI DB] and [Test DB] created and populated)
+- **SQL Server Data Tools (SSDT)** via **Visual Studio**
+- **SSIS Projects Extension** installed in Visual Studio
+
+---
+
+### 2. 🛠️ Configuration Steps
+
+#### ⚙️ Open the Project
+- Open Visual Studio.
+- Go to `File` → `Open` → `Project/Solution`.
+- Select the `.sln` file for your SSIS solution or open individual `.dtsx` packages.
+
+#### 🔄 Update Connection Strings
+- Right-click on each **Connection Manager** at the bottom of the SSIS package design view.
+- Edit the connection string to match your local or server database settings:
+  - Replace placeholders like `.\SQLEXPRESS`, `localhost`, or hardcoded database paths.
+
+#### 💾 Prepare the Environment
+- Ensure `ITI DB` and `Test DB` exist and contain the required schema.
+- Create or clear the target text files (`Student.txt`, `File1.txt`, etc.) if needed.
+
+---
+
+### 3. ▶️ Run the Packages
+
+#### 🧪 From Visual Studio:
+
+- Open the desired `.dtsx` file.
+- Click **Start Debugging (F5)**.
+- Monitor the **Execution Results** tab for any errors or success messages.
+
+---
+
+### 4. 📁 Output Locations
+
+- **Delimited files** (like `Student.txt`, `File1.txt`, etc.) are written to the file system.
+- Make sure you have write permissions to the specified directories.
+- Verify outputs and logs after execution.
+
 ---
 
