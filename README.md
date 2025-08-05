@@ -79,8 +79,6 @@ The project includes 5 key SSIS packages, each addressing a different ETL (Extra
 
 - SQL Server Integration Services (SSIS)
 - SSIS Import and Export Wizard
-- Control Flow Tasks: Execute SQL Task, Backup Task
-- Data Flow Components: Derived Column, Character Map, Sort, Merge, Union All
 - SQL Server Management Studio (SSMS)
 
 ---
