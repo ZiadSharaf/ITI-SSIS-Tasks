@@ -63,15 +63,31 @@ The project includes 5 key SSIS packages, each addressing a different ETL (Extra
 
 ---
 
-## 📁 Package 5: Merge Course Files
+## 📁 Package 5: Combine Course Files
 
-**Goal**: Merge `File1.txt` and `File2.txt` into a single file.
+This task includes two variations of combining `File1.txt` and `File2.txt` into a single file using different SSIS components.
+
+---
+
+### 📄 5.1 Merge Course Files Using [Merge Component]
+
+**Goal**: Merge `File1.txt` and `File2.txt` in sorted order.
 
 **Steps**:
-1. **Sort** by `Crs_name` before merging.
-2. Use:
-   - **Merge Component** for ordered merge
-   - **Union All Component** (if order is not a concern)
+- Ensure both input files are **sorted by `Crs_name`** in ascending order.
+- Use the **Merge Component** in the Data Flow.
+- Output a single delimited file with **column names as the first row**.
+
+---
+
+### 📄 5.2 Union Course Files Using [Union All Component]
+
+**Goal**: Combine `File1.txt` and `File2.txt` without enforcing order.
+
+**Steps**:
+- Use the **Union All Component** to concatenate data from both files.
+- Sorting is **not required**.
+- Output a single delimited file with **column names as the first row**.
 
 ---
 
