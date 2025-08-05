@@ -85,17 +85,3 @@ The project includes 5 key SSIS packages, each addressing a different ETL (Extra
 
 ---
 
-## 📂 Folder Structure
-
-```plaintext
-/SSIS-Packages
-│
-├── Package1_DepartmentTransfer.dtsx
-├── Package2_StudentToFile.dtsx
-├── Package3_StudentTransformBackup.dtsx
-├── Package4_SplitCourseData.dtsx
-├── Package5_MergeFiles.dtsx
-├── Student.txt
-├── File1.txt
-├── File2.txt
-├── File3.txt
