@@ -2,9 +2,9 @@
 
 This repository contains the design and implementation of various SQL Server Integration Services (SSIS) packages as part of a data migration and transformation project using data from the **ITI DB** and **Test DB**.
 
-## 📦 Project Overview
+## 📦 Task Overview
 
-The project includes 5 key SSIS packages, each addressing a different ETL (Extract, Transform, Load) scenario using SSIS tools like the Import/Export Wizard, Derived Column, Character Map, Merge, Union, and various control flow components.
+The task includes 5 key SSIS packages, each addressing a different ETL (Extract, Transform, Load) scenario using SSIS tools like the Import/Export Wizard, Derived Column, Character Map, Merge, Union, and various control flow components.
 
 ---
 
