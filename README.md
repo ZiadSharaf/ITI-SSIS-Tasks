@@ -16,6 +16,10 @@ The project includes 5 key SSIS packages, each addressing a different ETL (Extra
 - Truncate the `Department` table in **Test DB** before data transfer.
 - Use the **SSIS Wizard** to move the data.
 
+**📸 Screenshots**:
+![Package 1 - Control Flow](Images/package1_controlflow.png)  
+![Package 1 - Data Flow](Images/package1_dataflow.png)
+
 ---
 
 ## 📁 Package 2: Export Student Data to Delimited File
@@ -27,6 +31,10 @@ The project includes 5 key SSIS packages, each addressing a different ETL (Extra
 - Export to `Student.txt` in a **Delimited** format.
 - Set **column names as the first row** in the output file.
 - Use the **SSIS Wizard**.
+
+**📸 Screenshots**:
+![Package 2 - Control Flow](Images/package2_controlflow.png)  
+![Package 2 - Data Flow](Images/package2_dataflow.png)
 
 ---
 
@@ -42,6 +50,10 @@ The project includes 5 key SSIS packages, each addressing a different ETL (Extra
 3. **Perform a full backup** of **Test DB** before loading.
 4. Handle errors gracefully:
    - On any failure, **display a message box**: `"Error occurred"`.
+
+**📸 Screenshots**:
+![Package 3 - Control Flow](Images/package3_controlflow.png)  
+![Package 3 - Data Flow](Images/package3_dataflow.png)
 
 ---
 
@@ -61,6 +73,10 @@ The project includes 5 key SSIS packages, each addressing a different ETL (Extra
    - Be **Delimited**
    - Include **column names as the first row**
 
+
+**📸 Screenshot**:
+![Package 4 - Data Flow](Images/package4_dataflow.png)
+
 ---
 
 ## 📁 Package 5: Combine Course Files
@@ -78,6 +94,10 @@ This task includes two variations of combining `File1.txt` and `File2.txt` into 
 - Use the **Merge Component** in the Data Flow.
 - Output a single delimited file with **column names as the first row**.
 
+**📸 Screenshots**:
+![Package 5.1 - Control Flow](Images/package5_1_controlflow.png)  
+![Package 5.1 - Data Flow](Images/package5_1_dataflow.png)
+
 ---
 
 ### 📄 5.2 Union Course Files Using [Union All Component]
@@ -88,6 +108,11 @@ This task includes two variations of combining `File1.txt` and `File2.txt` into 
 - Use the **Union All Component** to concatenate data from both files.
 - Sorting is **not required**.
 - Output a single delimited file with **column names as the first row**.
+
+
+**📸 Screenshots**:
+![Package 5.2 - Control Flow](Images/package5_2_controlflow.png)  
+![Package 5.2 - Data Flow](Images/package5_2_dataflow.png)
 
 ---
 
